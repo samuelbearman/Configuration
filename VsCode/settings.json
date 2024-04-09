@@ -1,0 +1,47 @@
+{
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  // Modifier key 
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Cycle through open editors that are open in focus Shift+(h/l) 
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    // Open a split on verticle or horizontal
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    // Cycle through open focuses (hjkl)
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // Write, quit, and exit
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    // File pallette open
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Indent and outdent lines selected
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    // 
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // Comment lines
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ]
+}
