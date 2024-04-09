@@ -1,6 +1,8 @@
 {
+  "editor.cursorSurroundingLines": 8,
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
+  "vim.useSystemClipboard": true,
   // Modifier key 
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
