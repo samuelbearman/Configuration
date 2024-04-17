@@ -17,6 +17,18 @@
     "command": "workbench.action.togglePanel"
   },
   {
+    // Toggle to editor from terminal
+    "key": "ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    // Toggle to terminal from editor
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
     // Create a new terminal in pane
     "key": "ctrl+shift+n",
     "command": "workbench.action.terminal.new",
