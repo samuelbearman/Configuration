@@ -35,6 +35,11 @@
     "when": "terminalFocus"
   },
   {
+    // Disable exisitng keybind
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
     // Focus back to the editor when viewing the the file listing
     "key": "ctrl+e",
     "command": "workbench.action.focusActiveEditorGroup",
@@ -63,5 +68,6 @@
     "key": "d",
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
-  }
+  },
 ]
+
