@@ -68,6 +68,6 @@
     "key": "d",
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
-  },
+  }
 ]
 

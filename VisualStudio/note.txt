@@ -1,0 +1,11 @@
+Install:
+- VsVim 2022
+- VsNerdX
+
+Notes:
+
+- Unable to bind the maneuver key to Shift+L or Shift+H so instead it is Ctrl+Shift+H and Ctrl+Shift+L
+- Build Solution Command: Ctrl+Shift+B
+- Build Solution and Run Command Current Project (No Debug): Ctrl+Shift+R
+- Build Solution and Run Command Current Project (Debug): Ctrl+Shift+D
+- Clean Solution: Ctrl+Shift+C 
