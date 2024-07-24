@@ -68,6 +68,11 @@
     "key": "d",
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    // disable editor search key
+    "key": "ctrl+shift+f",
+    "command": "-workbench.action.findInFiles"
   }
 ]
 
