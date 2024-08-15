@@ -1,0 +1,34 @@
+# How I do keybinds
+
+- Editor View:
+	- Ctrl+Shift+H: Previous Pane
+	- Ctrl+Shift+L: Next Pane
+	- Ctrl+Shift+A: New Terminal Session
+	- Ctrl+Shift+B: Previous Terminal Session
+	- Ctrl+Shift+J: Toggle to Terminal
+	
+- Terminal View:
+	- Ctrl+Shift+H: Previous Pane
+	- Ctrl+Shift+L: Next Pane
+	- Ctrl+Shift+V: Split Pane
+	- Ctrl+Shift+Up: Resize Terminal Up
+	- Ctrl+Shift+Down: Resize Terminal Down
+	- Ctrl+Shift+N: New Terminal
+	- Ctrl+E: Toggle to file explorer
+	- Ctrl+Shift+J: Toggle to editor
+	
+- File Explorer View:
+	- Ctrl+E: Toggle to editor
+	- n: Create new file
+	- Ctrl+n: Create new directory
+	
+- Vim:
+	- Leader: Space
+	- Comment toggle: Leader+C
+	- Save: Leader+W
+	- Exit: Leader+X
+	- Quite: Leader+q
+	- Highlight+>: Shift right
+	- Highlight+<: Shift left
+	- Highlight+K: Move lines up
+	- Highlight+J: Move lines down
