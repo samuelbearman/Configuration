@@ -68,6 +68,45 @@
     "key": "d",
     "command": "deleteFile",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    // Disable editor search key 
+    "key": "ctrl+shift+f",
+    "command": "-workbench.action.findInFiles"
+  },
+  {
+    // Disable editor search key 
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    // toggle to next pane
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    // toggle to next pane
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    // split pane
+    "key": "ctrl+shift+v",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    // resize up
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+  },
+  {
+    // resize down
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
   }
 ]
-

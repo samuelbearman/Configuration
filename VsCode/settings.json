@@ -5,6 +5,7 @@
   "vim.useSystemClipboard": true,
   // Modifier key 
   "vim.leader": "<Space>",
+  "vim.handleKeys": { "<C-f>": false },
   "vim.normalModeKeyBindingsNonRecursive": [
     // Cycle through open editors that are open in focus Shift+(h/l) 
     { "before": ["<S-h>"], "commands": [":bprevious"] },
