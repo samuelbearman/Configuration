@@ -1,26 +1,25 @@
 # How I do keybinds
 
-- Editor View:
+- (VsCode) Editor View:
 	- Ctrl+Shift+H: Previous Pane
 	- Ctrl+Shift+L: Next Pane
 	- Ctrl+Shift+A: New Terminal Session
 	- Ctrl+Shift+B: Previous Terminal Session
 	- Ctrl+Shift+J: Toggle to Terminal
 	
-- Terminal View:
-	- Ctrl+Shift+H: Previous Pane
-	- Ctrl+Shift+L: Next Pane
-	- Ctrl+Shift+V: Split Pane
-	- Ctrl+Shift+Up: Resize Terminal Up
-	- Ctrl+Shift+Down: Resize Terminal Down
-	- Ctrl+Shift+N: New Terminal
-	- Ctrl+E: Toggle to file explorer
-	- Ctrl+Shift+J: Toggle to editor
-	
-- File Explorer View:
+- (VsCode) File Explorer View:
 	- Ctrl+E: Toggle to editor
 	- n: Create new file
 	- Ctrl+n: Create new directory
+
+- Windows Terminal:
+	- Ctrl+Shift+H: Previous Pane
+	- Ctrl+Shift+L: Next Pane
+	- Ctrl+Shift+;: Split Vertical
+	- Ctrl+Shift+': Split Horizontal
+	- Ctrl+Shift+Up/Down/Left/Right: Move from split to split
+	- Ctrl+Shift+N: New Terminal
+	- Ctrl+Shift+M: Open Custom Terminal
 	
 - Vim:
 	- Leader: Space

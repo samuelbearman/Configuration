@@ -1,0 +1,23 @@
+{
+    "background": "#1E1E1E",
+    "black": "#1A1A1A",
+    "blue": "#0869CB",
+    "brightBlack": "#464646",
+    "brightBlue": "#0A84FF",
+    "brightCyan": "#76D6FF",
+    "brightGreen": "#32D74B",
+    "brightPurple": "#BF5AF2",
+    "brightRed": "#FF453A",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#FFD60A",
+    "cursorColor": "#98989D",
+    "cyan": "#479EC2",
+    "foreground": "#FFFFFF",
+    "green": "#26A439",
+    "name": "Apple System Colors",
+    "purple": "#9647BF",
+    "red": "#CC372E",
+    "selectionBackground": "#3F638B",
+    "white": "#98989D",
+    "yellow": "#CDAC08"
+}

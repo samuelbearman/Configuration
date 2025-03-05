@@ -1,0 +1,5 @@
+eza - https://github.com/eza-community/eza
+ripgrep - https://github.com/BurntSushi/ripgrep
+fd - https://github.com/sharkdp/fd
+
+oh-my-posh - https://github.com/JanDeDobbeleer/oh-my-posh/tree/main
