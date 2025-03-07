@@ -22,6 +22,11 @@
           }
         },
         {
+          "foreground": "#3A86FF",
+          "style": "plain",
+          "type": "git"
+        },
+        {
           "type": "text",
           "style": "plain",
           "foreground": "#FFFFFF",
