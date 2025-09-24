@@ -31,7 +31,6 @@ function _getThread(eprocess) {
         var m = threadRegex.exec(Line);
         if(m && m[1]) {
             let threadClean = m[1].replace(/^0x/, '');
-            logln('THREAD -> ' + m + ' -> ' + threadClean);
             return threadClean;
         }
     }
@@ -65,6 +64,22 @@ function attachusermode(procName) {
     logln("ETHREAD -> " + ethread)
     execute(`.thread /w ${ethread}`)
     execute('.reload /f /user')
+    logln('Done!')
+}
+
+function handle_conditionalBreakpoint(dllName) {
+    let Regs = host.currentThread.Registers.User;
+
+    let addr = Regs.rsp
+
+    let value = host.memory.readMemoryValues(addr, 1, 8)[0];
+
+    logln("Value: " + value);
+}
+
+
+function conditionalBreakpoint() {
+    execute("bp KernelBase!LoadLibraryW @$scriptContents.handle_conditionalBp('testdll.dll')");
 }
 
 function initializeScript() {
@@ -74,5 +89,9 @@ function initializeScript() {
             attachusermode,
             'attachusermode'
         ),
+        new host.functionAlias(
+            conditionalBreakpoint,
+            'conditionalBreakpoint'
+        )
     ];
 }
