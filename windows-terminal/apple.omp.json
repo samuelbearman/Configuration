@@ -14,7 +14,7 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "#FFFFFF",
+          "foreground": "#62c6d8",
           "template": "{{.PWD}} ",
           "properties": {
             "style": "full",
