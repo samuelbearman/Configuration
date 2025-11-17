@@ -47,7 +47,7 @@ function attachusermode(procName) {
 
     // 1) !process 0 0 <procName>
     var cmd1 = "!process 0 0 " + procName;
-    logln("Executing: " + cmd1 + "\n");
+    logln("Executing: " + cmd1);
     let eprocess = _getEprocess(cmd1);
 
     if(eprocess === '') {

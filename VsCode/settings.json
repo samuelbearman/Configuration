@@ -1,7 +1,9 @@
 {
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.cursorSurroundingLines": 8,
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark",
   "vim.useSystemClipboard": true,
   // Modifier key 
   "vim.leader": "<Space>",
@@ -34,8 +36,12 @@
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "f", "f"], "commands": ["search-preview.quickOpenWithPreview"] },
     // File pallette open
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] }
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    // Movement up and down, with centering
+    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] }
   ],
   "vim.visualModeKeyBindings": [
     // Indent and outdent lines selected
@@ -48,3 +54,4 @@
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ]
 }
+

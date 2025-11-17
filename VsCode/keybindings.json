@@ -81,19 +81,19 @@
   },
   {
     // toggle to next pane
-    "key": "ctrl+shift+l",
+    "key": "ctrl+shift+right",
     "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus"
   },
   {
     // toggle to next pane
-    "key": "ctrl+shift+h",
+    "key": "ctrl+shift+left",
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus"
   },
   {
     // split pane
-    "key": "ctrl+shift+v",
+    "key": "ctrl+shift+;",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
   },
@@ -108,5 +108,9 @@
     "key": "ctrl+shift+down",
     "command": "workbench.action.terminal.resizePaneDown",
     "when": "terminalFocus"
+  },
+  {
+    "key" : "space+f+f",
+    "command": "cursorMovesearch-preview.quickOpenWithPreview"
   }
 ]
