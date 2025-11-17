@@ -1,11 +1,10 @@
 # How I do keybinds
 
 - (VsCode) Editor View:
-	- Ctrl+Shift+H: Previous Pane
-	- Ctrl+Shift+L: Next Pane
-	- Ctrl+Shift+A: New Terminal Session
-	- Ctrl+Shift+B: Previous Terminal Session
-	- Ctrl+Shift+J: Toggle to Terminal
+	- Shift+H: Previous Pane
+	- Shift+L: Next Pane
+	- Ctrl+J: Toggle to Terminal
+	- Ctrl+Shift+J: Toggle to Terminal up/down
 	
 - (VsCode) File Explorer View:
 	- Ctrl+E: Toggle to editor
@@ -31,3 +30,8 @@
 	- Highlight+<: Shift left
 	- Highlight+K: Move lines up
 	- Highlight+J: Move lines down
+	- Ctrl+u: Move up in editor
+	- Ctrl+d: Move down in editor
+
+- Other:
+	- Leader+f+f: fuzzy finder	
