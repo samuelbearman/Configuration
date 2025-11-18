@@ -12,3 +12,6 @@
 `$` - Jump to end of line in normal mode
 `gg` - Jump to first line of file
 `G` - Jump to last line of file
+`d$` - from cursor delete all to right
+`o` - New line below, in insert mode
+`O` - New line above, in insert mode
