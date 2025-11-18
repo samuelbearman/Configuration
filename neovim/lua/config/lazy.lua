@@ -29,19 +29,19 @@ require("lazy").setup({
       tag = '0.1.8',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
-{
-  'projekt0n/github-nvim-theme',
-  name = 'github-theme',
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
-  priority = 1000, -- make sure to load this before all the other start plugins
-  config = function()
-    require('github-theme').setup({
-      -- ...
-    })
+    {
+      'projekt0n/github-nvim-theme',
+      name = 'github-theme',
+      lazy = false, -- make sure we load this during startup if it is your main colorscheme
+      priority = 1000, -- make sure to load this before all the other start plugins
+      config = function()
+        require('github-theme').setup({
+          -- ...
+        })
 
-    vim.cmd('colorscheme github_dark')
-  end,
-}
+        vim.cmd('colorscheme github_dark')
+      end,
+    }
 
   },
   -- Configure any other settings here. See the documentation for more details.
