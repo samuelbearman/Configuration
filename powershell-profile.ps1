@@ -1,6 +1,8 @@
 Del Alias:ls
 Set-Alias -Name ls -Value "C:\bin\eza"
 
+Set-Alias -Name vim -Value nvim
+
 # oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\craver.omp.json | Invoke-Expression
 oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\apple.omp.json | Invoke-Expression
 
