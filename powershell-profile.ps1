@@ -1,6 +1,7 @@
 Del Alias:ls
 Set-Alias -Name ls -Value "C:\bin\eza"
 
+# oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\craver.omp.json | Invoke-Expression
 oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\apple.omp.json | Invoke-Expression
 
 function LL {
@@ -15,12 +16,11 @@ function fzf-h {
     $item = Get-History |
         Sort-Object Id -Descending |
         ForEach-Object { $_.CommandLine } |
-        fzf --tac --prompt="History> " --preview "echo {}"
+        fzf --tac --prompt="History> "
 
     if ($item) {
         # Insert the result back into the prompt buffer
         Set-Clipboard $item
-        Write-Host "`nPasted to clipboard (Ctrl+V to run):`n$item"
     }
 }
 
@@ -39,9 +39,13 @@ function fzf-fh {
     $selection = $commands |
         fzf --prompt="History> " `
             --tac `
-            --preview "echo {}"
 
     if ($selection) {
-        [Microsoft.PowerShell.PSConsoleReadLine]::Insert($selection)
+        Set-Clipboard $selection
     }
 }
+
+Set-PSReadLineKeyHandler -Key Ctrl+r `
+    -BriefDescription "FuzzyFullHistory" `
+    -LongDescription "Search full PSReadLine history with fzf" `
+    -ScriptBlock { fzf-fh }
