@@ -4,8 +4,12 @@ Set-Alias -Name ls -Value "C:\bin\eza"
 # oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\craver.omp.json | Invoke-Expression
 oh-my-posh init pwsh --config $env:POSH_THEMES_PATH\apple.omp.json | Invoke-Expression
 
-function LL {
+function ll {
     & "C:\bin\eza.exe" -la @args
+}
+
+function lt {
+    & "C:\bin\eza.exe" --tree @args
 }
 
 function fzf-p {
