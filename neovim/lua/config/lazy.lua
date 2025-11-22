@@ -24,12 +24,7 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
-    {
-      'nvim-telescope/telescope.nvim',
-      tag = '0.1.8',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-    },
   },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = { enabled = false },
 })
