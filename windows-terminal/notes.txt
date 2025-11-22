@@ -1,5 +1,0 @@
-Font Name: CaskaydiaMono Nerd Font
-Line Height: 0.9
-Font-Weight: Semi-Bold
-
-Set 'powershell.exe -NoLogo' to turn off Logo prompt on startup
