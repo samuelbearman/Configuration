@@ -1,1 +1,8 @@
-vim.lsp.enable({'luals', 'gopls', 'rust_analyzer', 'pylsp'})
+vim.lsp.enable(
+    {
+        'luals',
+        'gopls', 
+        'rust_analyzer',
+        'ruff',
+    }
+)

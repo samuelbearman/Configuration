@@ -13,7 +13,10 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "nzzzv")
-
 vim.keymap.set("x", "<leader>p", "\"_dP")
+
+vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+
+vim.keymap.set("n", " ", "<Nop>", { desc = "Ignore space", silent = true })
+
