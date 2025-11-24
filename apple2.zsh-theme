@@ -2,10 +2,10 @@
 WHITE="%F{255}"
 CYAN="%F{81}"
 BLUE="%F{33}"
+ORANGE="%F{208}"
 RESET="%f"
 
-# Username@Host
-PROMPT="${WHITE}%n@%m "
+PROMPT="${WHITE}%n@${ORANGE}%m "
 
 # Full PWD with ~
 PROMPT+="${CYAN}%~ "
