@@ -1,0 +1,11 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(python ~/.claude/skills/prompt-manager/prompts.py list)",
+            "Bash(python ~/.claude/skills/prompt-manager/prompts.py complete *)",
+            "Bash(python ~/.claude/skills/prompt-manager/prompts.py add *)",
+            "Bash(python ~/.claude/skills/prompt-manager/prompts.py get *)"
+        ]
+    },
+    "theme": "dark"
+}

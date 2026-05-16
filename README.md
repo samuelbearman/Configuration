@@ -16,3 +16,9 @@ Profiles, tools, and other personal things that I like.
 
 `leader+pv` - Open file browser
 `leader+ff` - fuzzy finder
+
+## Claude Code
+
+### Skills
+
+- `/prompt-manager` - Simple queue stype skill for running prompts automatcally. Can be scheduled to run at a certain time.
