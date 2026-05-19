@@ -1,0 +1,63 @@
+[
+  {
+    "bindings": {
+      "space j": "terminal_panel::Toggle",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "space e": "project_panel::Toggle",
+      "ctrl-e": "project_panel::ToggleFocus",
+      "space a": "agent::Toggle",
+      "ctrl-a": "agent::ToggleFocus",
+      "ctrl-shift-h": null,
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "shift-n": "project_panel::NewFile",
+    },
+  },
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem",
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
+      "space b": "pane::AlternateFile",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "J": "editor::MoveLineDown",
+      "K": "editor::MoveLineUp",
+      ">": ["editor::Indent", "editor::SelectLargerSyntaxNode"],
+      "<": ["editor::Outdent", "editor::SelectSmallerSyntaxNode"],
+    },
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+    },
+  },
+  {
+    "context": "Editor && VimControl",
+    "bindings": {
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-f": "buffer_search::Deploy",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-v": "editor::Paste",
+    },
+  },
+]

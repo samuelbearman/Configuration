@@ -1,0 +1,30 @@
+
+  "icon_theme": "Material Icon Theme",
+  "terminal": {
+    "shell": {
+      "program": "/usr/bin/zsh",
+    },
+  },
+  "relative_line_numbers": "enabled",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "vertical_scroll_margin": 8.0,
+  "minimap": {
+    "show": "never",
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark",
+  },
+}
+
