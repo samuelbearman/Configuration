@@ -80,6 +80,7 @@ map("v", "<", "<gv")
 
 -- LSP / diagnostics
 map("n", "gd",         vim.lsp.buf.definition,    { desc = "Go to definition" })
+map("n", "gb",         "<C-o>",                   { desc = "Go back (jumplist)" })
 map("n", "<leader>e",  vim.diagnostic.open_float, { desc = "Expand diagnostic" })
 
 -- Auto-pairs
